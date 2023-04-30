@@ -237,6 +237,18 @@
               </a>
             </div>
           </div>
+          <div class="footer__column">
+            <h5>Подпишитесь на рассылку</h5>
+            <form action="post" class="footer__subscription-form subscription-form">
+              <input type="text" placeholder="E-mail">
+              <button>
+                Подписаться
+                <svg>
+                  <use href="/sprite.svg#plane"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </footer>
       <!--  -->
@@ -248,6 +260,56 @@
                 <use href="/sprite.svg#cross"></use>
               </svg>
             </button>
+            <h3 class="modal-window__title">Оставьте свои данные, мы вам перезвоним</h3>
+            <form action="post">
+              <div class="modal-window__input-wrapper">
+                <label for="name">Имя</label>
+                <div class="modal-window__input input-icon input-icon__user">
+                  <input id="name" type="text">
+                  <span>
+                    <svg>
+                      <use href="/sprite.svg#userFill"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="modal-window__input-wrapper">
+                <label for="phone">Телефон</label>
+                <div class="modal-window__input input-icon input-icon__phone">
+                  <input id="phone" type="text">
+                  <span>
+                    <svg>
+                      <use href="/sprite.svg#phoneFill"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="modal-window__input-wrapper">
+                <label for="name">Почта</label>
+                <div class="modal-window__input input-icon input-icon__envelope">
+                  <input id="name" type="text">
+                  <span>
+                    <svg>
+                      <use href="/sprite.svg#envelopeFill"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="modal-window__input-wrapper">
+                <label for="comment">Комментарий</label>
+                <textarea id="comment" class="modal-window__textarea" cols="30" rows="10" placeholder="Введите текст"></textarea>
+              </div>
+              <div class="modal-window__checkbox">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">
+                  Соглашаюсь с рассылкой и принимаю 
+                  <a href="#">
+                    Условия договора
+                  </a>
+                </label>
+              </div>
+              <button class="main-button main-button__dark-hover">Отправить</button>
+            </form>
           </div>
         </div>
       </div>
